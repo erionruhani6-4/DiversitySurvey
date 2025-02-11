@@ -13,7 +13,7 @@ except FileNotFoundError:
 with open('counter.txt', 'w') as f:
     f.write(str(count + 1))
 
-API_TOKEN = 'myhJ4dGBGOJMoWNP5dSRibf7Jbep70cCxn7E8m8M'
+API_TOKEN = 'Insert Qualtrics API Token'
 BASE_URL = 'https://iad1.qualtrics.com/API/v3'
 
 headers_s = {
@@ -52,16 +52,14 @@ def make_tables(size):
 
 def upload_image(file_path, prompt):
     generate_image(prompt, 'generated-image.jpg')
-    cloud_name = "dmmulnblq"
-    pi_key = "945771813558264"
-    api_secret = "DgAx26TNCnM_qGeI4KapjaC55r8"
+    cloud_name = "insert cloudinary cloud name"
 
     # Cloudinary API endpoint
     url = f"https://api.cloudinary.com/v1_1/{cloud_name}/image/upload"
 
     # Upload settings
     data = {
-        "upload_preset": "d2evzunt"  # Set this in Cloudinary Dashboard (Media Library > Upload Settings)
+        "upload_preset": "insert preset"  # Set this in Cloudinary Dashboard (Media Library > Upload Settings)
     }
 
     # Open the file and upload it

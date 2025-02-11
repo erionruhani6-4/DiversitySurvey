@@ -4,8 +4,8 @@ def generate_image(prompt: str, filename: str = "generated-image.jpg"):
     """
     Sends a request directly to Cloudflare AI API and saves the generated image.
     """
-    API_URL = "https://api.cloudflare.com/client/v4/accounts/3b89712328122d1880b1634761a26a5e/ai/run/@cf/bytedance/stable-diffusion-xl-lightning"
-    API_TOKEN = "P9YYc-P9eTIE5doqOPFR46Tgfm7iW9m2IjBDbsNS"
+    API_URL = "https://api.cloudflare.com/client/v4/accounts/{INSERT ACCOUNT NUMBER}/ai/run/@cf/bytedance/stable-diffusion-xl-lightning"
+    API_TOKEN = "insert cloudflare api token"
     
     headers = {
         "Authorization": f"Bearer {API_TOKEN}",
